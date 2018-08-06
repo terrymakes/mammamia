@@ -1,0 +1,171 @@
+/* margin reset */
+* {margin:0;padding:0;}
+
+body {
+    background: rgb(214, 160, 115) /*url('mammaMiaLOGO.png')*/;
+    font-size:10px;
+    font-family: Verdana, Futura, sans-serif;
+    color:rgb(64, 79, 17);
+}
+
+.container {
+    width:76em;
+    margin: 0 auto;
+    background:white;
+}
+
+.header {
+    margin-top:1em;
+    padding:1em;
+}
+.header h1 {
+    background: url(mammaMiaLOGO-01.png) no-repeat top 40% left 50%;
+    background-size: 13em; /* use 12em for non-01 version */
+    text-indent: -500em;
+}
+
+.subhead {
+    width: 76em;
+    height: 3.2em;
+    text-align: center;
+}
+
+.header, .subhead, .footer {
+    background: rgb(252, 238, 210);
+}
+ul.nav {
+    list-style-type:none;
+    width:76em;
+    height:3.2em;
+    margin: 0 auto;
+    text-align:center;
+}
+
+ul.nav li {
+    display: inline;
+    float:left;
+    margin-left:2.5em;
+}
+
+ul.nav li a, ul.nav li a:visited, ul.nav li a:active, ul.nav li a:hover, ul.nav li a:focus  {
+    display:block;
+    padding: 0.27em 3.5em;
+    margin: 0 0.5em;
+    text-decoration:none;
+    font-size:1.8em;
+    font-weight: bold;
+}
+
+ul.nav li a, ul.nav li a:visited {
+    color: rgb(64, 79, 17);
+}
+
+ul.nav li a:active, ul.nav li a:hover, ul.nav li a:focus {
+    background: rgb(255, 255, 238);
+    color: rgb(153, 51, 51);
+}
+
+a#current{
+    background: rgb(255, 255, 238);
+    color: rgb(64, 79, 17);
+}
+
+.sidebar {
+    float:right;
+    width:24em;
+    padding:1em;
+    min-height:24em;
+   /* background:#999;*/
+}
+
+.sidebar h2, h2 {
+    font-size: 1.8em;
+    line-height:1.2em;
+    padding-bottom:0.2em;
+}
+.sidebar p + h2{
+    margin-top:1.2em;
+}
+.sidebar p {
+    font-size:1.4em;
+    line-height:2em;
+    width:16em;
+}
+
+.content {
+    float:left;
+    width:44em;
+    padding:1em 2em 1em 4em;
+  /*  background:#333;*/
+}
+.footer {
+    width:74em;
+    height:2em;
+    padding:1em;
+   /* background:#f00;*/
+    text-align:center;
+}
+.footer p {width:100%;}
+
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 0.1em;
+	line-height: 0;
+}
+
+h1 {
+    font-size:5em;
+    line-height:1em;
+    text-align:center;
+}
+
+p {
+    font-size:1.4em;
+    line-height:1.8em;
+    width:30.5em;
+}
+
+p.caption {
+    font-size:1em;
+    line-height:2.5em;
+    width:22em;
+}
+
+a:link {
+    color:rgb(0, 0, 0);
+}
+
+a:visited {
+    color: rgb(64, 79, 17);
+}
+
+a:hover, a:focus, a:active {
+    color:rgb(153, 51, 51);
+    background:rgb(252, 238, 210);
+}
+
+.sizeLg, .sizeMd {
+    float:right;
+    margin-left:1em;
+}
+.sizeLg::before {content: "Large: ";}
+.sizeMd::before {content: "Med: "}
+dl.menu {
+    font-size:1.4em;
+    width:29em;
+    line-height:1.8em;
+}
+dl.menu dt{
+    float:left;
+    font-weight: bold;
+}
+
+dd.menuDesc {
+    clear:both;
+    height:inherit;
+    font-size:inherit;
+    line-height:inherit;
+    margin-bottom:1.8em;
+    font-style:italic;
+}
